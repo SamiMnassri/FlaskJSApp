@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Home Page - MyApp</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}"><!-- Call our main CSS Stylesheet file --> 
+</head>
+
+<body>
+
+	<!-- TEXT DATA EXAMPLE --> 
+	<div class="mainExample">
+		<h4>Text Example</h4>
+		<form>
+			Name <input id="nameText" class="inputHolder" type="text" name="nameText" value="{{ default_name }}">
+			<a href="" class="button" id="Textsubmit">Submit</a>
+		</form>
+		<div class="responseHolder" id="TEXTresultHolder"></div>
+	</div>
+
+
+	<!-- JSON DATA EXAMPLE -->
+	<div class="mainExample">
+		<h4>JSON Example</h4>
+		<form>
+			Name <input id="nameVar" class="inputHolder" type="text" name="name" value="{{ default_name }}">
+			Age <input id="ageVar" class="inputHolder" type="text" name="age" value="{{ default_age }}">
+			Country <input id="countryVar" class="inputHolder" type="text" name="country" value="{{ default_country }}">
+			<a href="" class="button" id="JSONsubmit">Submit</a>
+		</form>
+		<div class="responseHolder" id="JSONresultHolder"></div>
+	</div>
+
+	<!-- JavaScript libraries/scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- Call jQuery file --> 
+	<script type="text/javascript" src="{{ url_for('static',filename='js/main.js') }}"></script><!-- Call our main JavaScript file --> 
+
+</body>
+</html>

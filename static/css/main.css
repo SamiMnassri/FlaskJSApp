@@ -1,0 +1,28 @@
+.mainExample{
+	background-color: #f1f1f1;
+    padding: 0.01em 16px;
+    margin: 20px 0;
+}
+
+.inputHolder{
+	padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.responseHolder{
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    margin-bottom: 15px;
+}
